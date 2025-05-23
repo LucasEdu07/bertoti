@@ -1,7 +1,7 @@
-package com.garagem.controller;
+package com.concessionaria.controller;
 
 import jakarta.annotation.PostConstruct;
-import com.garagem.model.Carro;
+import com.concessionaria.model.Carro;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

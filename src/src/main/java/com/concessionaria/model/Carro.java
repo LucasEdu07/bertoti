@@ -1,4 +1,4 @@
-package com.garagem.model;
+package com.concessionaria.model;
 
 public class Carro {
     private String id;

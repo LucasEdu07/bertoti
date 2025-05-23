@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Consessionária de Carros - Concessionária Premium</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+<header class="header">
+    <h1>Consessionária de Carros</h1>
+    <p class="subtitle">Sua concessionária confiável com os melhores veículos</p>
+</header>
+
+<main class="container">
+
+    <section class="form-section">
+        <h2>Cadastro de Veículo</h2>
+        <form id="carroForm" autocomplete="off" novalidate>
+            <input type="hidden" id="id" />
+
+            <div class="input-group">
+                <label for="marca">Marca</label>
+                <input type="text" id="marca" placeholder="Ex: Toyota" required />
+            </div>
+
+            <div class="input-group">
+                <label for="modelo">Modelo</label>
+                <input type="text" id="modelo" placeholder="Ex: Corolla" required />
+            </div>
+
+            <div class="input-group">
+                <label for="ano">Ano</label>
+                <input type="number" id="ano" placeholder="Ex: 2022" min="1900" max="2099" required />
+            </div>
+
+            <div class="input-group">
+                <label for="tipo">Tipo</label>
+                <input type="text" id="tipo" placeholder="Ex: Sedan, Hatch..." required />
+            </div>
+
+            <button type="submit" class="btn-primary">Salvar Veículo</button>
+        </form>
+    </section>
+
+    <section class="table-section">
+        <h2>Veículos Cadastrados</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Tipo</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody id="tabelaCarros"></tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2025 Consessionária de Carros - Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
