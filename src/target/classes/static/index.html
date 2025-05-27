@@ -2,14 +2,20 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
-    <title>Consessionária de Carros - Concessionária Premium</title>
+    <title>Concessionária de Carros - Concessionária Premium</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Fonts - Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
-    <h1>Consessionária de Carros</h1>
+    <h1 class="glow-text">Concessionária de Carros</h1>
     <p class="subtitle">Sua concessionária confiável com os melhores veículos</p>
 </header>
 
@@ -40,7 +46,7 @@
                 <input type="text" id="tipo" placeholder="Ex: Sedan, Hatch..." required />
             </div>
 
-            <button type="submit" class="btn-primary">Salvar Veículo</button>
+            <button type="submit" class="btn-primary"><i class="fas fa-save"></i> Salvar Veículo</button>
         </form>
     </section>
 
@@ -57,14 +63,27 @@
                 <th>Ações</th>
             </tr>
             </thead>
-            <tbody id="tabelaCarros"></tbody>
+            <tbody id="tabelaCarros">
+            <!-- Exemplo fixo -->
+            <tr>
+                <td>1</td>
+                <td>Honda</td>
+                <td>Civic</td>
+                <td>2020</td>
+                <td>Sedan</td>
+                <td>
+                    <button class="icon-btn" title="Editar"><i class="fas fa-pen"></i></button>
+                    <button class="icon-btn" title="Excluir"><i class="fas fa-trash"></i></button>
+                </td>
+            </tr>
+            </tbody>
         </table>
     </section>
 
 </main>
 
 <footer class="footer">
-    <p>&copy; 2025 Consessionária de Carros - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Concessionária de Carros - Todos os direitos reservados.</p>
 </footer>
 
 <script src="script.js"></script>

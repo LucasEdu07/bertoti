@@ -65,3 +65,15 @@ async function deletarCarro(id) {
 }
 
 listarCarros();
+
+const editarBtn = document.createElement("button");
+editarBtn.innerHTML = "✏️ Editar";
+editarBtn.className = "icon-btn";
+editarBtn.title = "Editar";
+editarBtn.onclick = () => editarCarro(carro.id);
+
+const excluirBtn = document.createElement("button");
+excluirBtn.innerHTML = "🗑️ Excluir";
+excluirBtn.className = "icon-btn";
+excluirBtn.title = "Excluir";
+excluirBtn.onclick = () => excluirCarro(carro.id);
